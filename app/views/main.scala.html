@@ -1,0 +1,60 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
+
+        <script src="@routes.Assets.at("javascripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+         <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
+          <script src="@routes.Assets.at("javascripts/underscore.js")" type="text/javascript"></script>
+         <script src="@routes.Assets.at("javascripts/backbone.js")" type="text/javascript"></script>
+    </head>
+    <body>
+
+	 <div class="navbar ">
+	  <div class="navbar-inner">
+	    <a class="brand" href="#">Q-Flow</a>
+	    <nav>
+	    <ul class="nav pull-right">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="#">Any</a></li>
+	     
+	    </ul>
+		</nav>
+	  </div>
+	</div>
+
+
+	<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+    	<div id="sidebar">
+    		<ul class="sub-elements">
+      		<li>
+      		<a class="nav nav-task selected" href="#"> <span class="mini-square"> <i class="icon-ok icon-white"></i> </span> Tasks</a>
+      		</li>
+
+      		
+      		<li>
+      		<a class="nav nav-task " href="#"> <span class="mini-square"> <i class="icon-fire icon-white"></i> </span> History</a>
+      		</li>
+      		</ul>
+        </div>
+    </div>
+    <div class="span10">
+
+    	 <div class="container main-content">
+      		@content
+      	</div>
+    </div>
+  </div>
+</div>
+
+   
+    </body>
+</html>

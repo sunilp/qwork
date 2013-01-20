@@ -1,0 +1,151 @@
+body {
+    background: url("../images/bg.png") repeat scroll 0 0 #333333;
+    
+}
+
+.main-content{
+background-color: #fff;
+margin: -19px -20px 1px 0px;
+position: relative;
+left: -100px;
+}
+
+
+
+
+
+#sidebar {
+    -moz-user-select: none;
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 180px;
+}
+#sidebar a {
+    font-weight: 500;
+}
+#sidebar .content {
+    bottom: 48px;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#sidebar .workspace, #sidebar .nav, #sidebar .button-feedback-sidebar {
+    cursor: pointer;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.66);
+    transition: color 0.18s ease-in-out 0s;
+}
+#sidebar .workspace.selected, #sidebar .nav.selected, #sidebar .button-feedback-sidebar.selected {
+    color: rgba(255, 255, 255, 0.95);
+}
+#sidebar .workspace:hover, #sidebar .nav:hover, #sidebar .button-feedback-sidebar:hover {
+    color: rgba(255, 255, 255, 0.85);
+}
+#sidebar .nav {
+    color: rgba(255, 255, 255, 0.66);
+    display: block;
+    line-height: 38.4px;
+    margin-top: -6px;
+    padding-left: 16px;
+    position: relative;
+}
+#sidebar .nav:last-child {
+    margin-bottom: 6px;
+}
+#sidebar .nav-chat .badge {
+    top: 8px;
+}
+#sidebar a:focus {
+    outline: 0 none;
+}
+#sidebar .workspace {
+    color: rgba(255, 255, 255, 0.45);
+    display: block;
+    line-height: 48px;
+    padding-left: 16px;
+}
+#sidebar .workspace-name {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    padding-right: 30px;
+    text-overflow: ellipsis;
+    transition: color 0.18s ease-in-out 0s;
+    white-space: nowrap;
+}
+#sidebar .workspace-name .badge {
+    top: 12px;
+}
+#sidebar .workspace-row:first-child .workspace-name {
+    border-top-color: transparent;
+}
+#sidebar .show-settings, #sidebar .guest-badge {
+    border: 0 none;
+    display: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
+#sidebar .show-settings {
+    background-position: 0 -60px;
+}
+#sidebar .show-settings:focus, #sidebar .show-settings:active, #sidebar .show-settings.active, #sidebar .show-settings.selected {
+    background-position: 0 -20px;
+}
+
+#sidebar .workspace-row {
+    position: relative;
+}
+#sidebar .workspace-row .sub-elements {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+    display: none;
+    padding: 0 0 6px;
+}
+#sidebar .workspace-row.open .workspace-name, #sidebar .workspace-row.selected .workspace-name, #sidebar .workspace-row.will-open .workspace-name {
+    border-bottom-color: transparent;
+}
+#sidebar .workspace-row.open .workspace-name .badge, #sidebar .workspace-row.selected .workspace-name .badge, #sidebar .workspace-row.will-open .workspace-name .badge {
+    display: none;
+}
+#sidebar .workspace-row.open .sub-elements, #sidebar .workspace-row.selected .sub-elements {
+    display: block;
+}
+#sidebar .workspace-row.open .guest-badge, #sidebar .workspace-row.selected .guest-badge {
+    display: block;
+}
+#sidebar .workspace-row.selected .show-settings {
+    display: block;
+}
+#sidebar .workspace-row.selected:after {
+    opacity: 1;
+}
+#sidebar .workspace-row.selected .workspace-name {
+    color: rgba(255, 255, 255, 0.85);
+}
+#sidebar .workspace-row:last-child .sub-elements {
+    border-bottom-color: transparent;
+}
+#sidebar .visible {
+    display: block;
+}
+#sidebar .mini-square, #sidebar .show-settings, #sidebar .guest-badge {
+    -moz-user-select: none;
+    margin: -2px 12px 0 0;
+}
+#sidebar .badge {
+    background: linear-gradient(#64D62B, #45991F) repeat scroll 0 0 padding-box transparent;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 1px #70D33D inset, 0 1px 0 #A0F475 inset;
+    color: #FFFFFF;
+    height: 20px;
+    line-height: 20px;
+    padding: 2px 8px;
+    position: absolute;
+    right: 8px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.66);
+}
